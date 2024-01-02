@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@media (max-width: 768px) {
+    .container .grid {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+.border {
+  border: 10px solid linear-gradient(to right, white, gray);
+}
