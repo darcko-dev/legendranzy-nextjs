@@ -114,7 +114,7 @@ export const Footer = () => (
             <span className="sr-only">Discord</span>
           </Link>
           <Link
-            href="https://discord.com/invite/7XejyXCAkj"
+            href="/discord"
             className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
           >
             <svg
