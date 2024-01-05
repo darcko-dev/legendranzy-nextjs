@@ -3,6 +3,12 @@ import Prices from "@/components/prices/prices";
 import { Divider } from "@nextui-org/react";
 
 export default function Vps() {
+  const HeroSection = [
+    {
+      title: "Servicis de VPS",
+      content: "Toda la Información de nuestras VPS ",
+    },
+  ];
   const prices = [
     {
       icon: (
@@ -46,7 +52,7 @@ export default function Vps() {
   ];
   return (
     <main>
-      <Hero />
+      <Hero HeroSection={HeroSection} />
       <Divider className="my-16" />
       <Prices prices={prices} />
     </main>
