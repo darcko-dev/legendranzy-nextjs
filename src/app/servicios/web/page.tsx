@@ -2,6 +2,12 @@ import { Hero } from "@/components/hero/hero";
 import Prices from "@/components/prices/prices";
 import { Divider } from "@nextui-org/react";
 export default function Web() {
+  const HeroSection = [
+    {
+      title: "Servicios Web",
+      content: "Toda la Información de nuestros servicios web en un solo lugar",
+    },
+  ];
   const prices = [
     {
       icon: (
@@ -62,7 +68,7 @@ export default function Web() {
   ];
   return (
     <main>
-      <Hero />
+      <Hero HeroSection={HeroSection} />
       <Divider className="my-16" />
       <Prices prices={prices} />
     </main>
