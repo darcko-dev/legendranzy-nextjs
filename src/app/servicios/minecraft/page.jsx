@@ -4,6 +4,12 @@ import { Divider } from "@nextui-org/react";
 import { LogoMinecraft } from "./minecrafticons.jsx";
 
 export default function Minecraft() {
+  const HeroSection = [
+    {
+      title: "Servidores Minecraft",
+      content: "Nuestros servidores al mejor precio y con buen rendimiento ",
+    },
+  ];
   const prices = [
     {
       icon: <LogoMinecraft size={100} height={undefined} width={undefined} />,
@@ -126,7 +132,7 @@ export default function Minecraft() {
 
   return (
     <main>
-      <Hero />
+      <Hero HeroSection={HeroSection} />
       <Divider className="my-16" />
       <Prices prices={prices} />
       <Divider className="my-16" />
