@@ -4,6 +4,13 @@ import { Divider, Button, Link, Image } from "@nextui-org/react";
 import { Minecraft } from "@/components/navigation/Icons.jsx";
 
 export default function Inicio() {
+  const HeroSection = [
+    {
+      title: "Descubre nuestras características únicas",
+      content:
+        "Nuestras características están diseñadas para mejorar tu rendimiento y optimizar tu flujo de trabajo y diversion.",
+    },
+  ];
   const precios = [
     {
       icon: (
@@ -65,7 +72,7 @@ export default function Inicio() {
 
   return (
     <main>
-      <Hero />
+      <Hero HeroSection={HeroSection} />
       <Divider className="my-16" />
       <Feature />
       <Divider className="my-8" />
