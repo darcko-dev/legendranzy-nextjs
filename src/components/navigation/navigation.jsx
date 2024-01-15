@@ -104,7 +104,7 @@ export default function Navigation() {
   };
 
   return (
-    <div>
+    <nav>
       <Navbar onMenuOpenChange={setIsMenuOpen}>
         <NavbarContent>
           <NavbarMenuToggle
@@ -259,6 +259,6 @@ export default function Navigation() {
           </NavbarMenuItem>
         </NavbarMenu>
       </Navbar>
-    </div>
+    </nav>
   );
 }
